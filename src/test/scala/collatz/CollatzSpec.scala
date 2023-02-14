@@ -22,7 +22,7 @@ class CollatzSpec extends AnyFunSuite with Matchers:
     test("9") {
         Collatz(9) should be (28)
     }
-    
+
     test("0") {
         Collatz(0) should be (0)
     }
