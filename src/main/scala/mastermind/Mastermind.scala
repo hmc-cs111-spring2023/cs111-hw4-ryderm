@@ -32,7 +32,6 @@ def getRandomBoard(): Board =
 /** Play one round of the game */
 def playRound(board: Board): (Int, Int) =
    print("Enter a guess for spot 1: ")
-  //  val guess1 = readLine()
    val charGuess1: Char = scala.io.StdIn.readChar()
    var guess1 = charGuess1.asInstanceOf[Color]; //Casting
 
@@ -46,16 +45,7 @@ def playRound(board: Board): (Int, Int) =
 
    print("Enter a guess for spot 4: ")
    val charGuess4: Char = scala.io.StdIn.readChar()
-   var guess3 = charGuess4.asInstanceOf[Color]; //Casting
-
-
-  //  Color guess1 = guess1Str
-  //  print("Enter a guess for spot 2:")
-  //  Color guess2 = readLine()
-  //  print("Enter a guess for spot 3:")
-  //  Color guess3 = readLine()
-  //  print("Enter a guess for spot 4:")
-  //  Color guess4 = readLine()
+   var guess4 = charGuess4.asInstanceOf[Color]; //Casting
    
    val guessBoard = makeBoardFromColors(guess1, guess2, guess3, guess4)
    return scoreGuess(board, guessBoard)
