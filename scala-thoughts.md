@@ -11,4 +11,13 @@ of support from libraries, as I was easily able to import
 the random library and stdin library. 
 
 I think my favorite language design choice may be type
-inferrence. 
+inferrence. I also really like the compile error 
+messages, as they're very helpful and descriptive. Same 
+for pattern matching! I think the reason the developers 
+considered this is to make Scala very flexible in whatever
+it's being used for, which is does feel like that.
+
+I think I'd want to explore more Scala libraries. I'd also
+want to know more about the functional programming 
+aspects of Scala, as I feel like my code was mostly
+imperative language. 
