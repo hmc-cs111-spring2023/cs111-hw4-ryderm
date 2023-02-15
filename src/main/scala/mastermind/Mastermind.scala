@@ -22,11 +22,25 @@ def makeBoardFromColors(c1: Color, c2: Color, c3: Color, c4: Color): Board =
 
 /** Create a random board */
 def getRandomBoard(): Board =
-  ???
+  val board = makeBoardFromColors(
+    getRandomColor(),
+    getRandomColor(),
+    getRandomColor(),
+    getRandomColor())
+  return board
 
 /** Play one round of the game */
 def playRound(board: Board): (Int, Int) =
-  ???
+   print("Enter a guess for spot 1:")
+   val guess1 = readLine()
+   print("Enter a guess for spot 2:")
+   val guess2 = readLine()
+   print("Enter a guess for spot 3:")
+   val guess3 = readLine()
+   print("Enter a guess for spot 4:")
+   val guess4 = readLine()
+   
+   val guessBoard = makeBoardFromColors(guess1, guess2, guess3, guess4)
 
 /** Score a guess
   *
